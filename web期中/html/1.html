@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/1.css" type="text/css">
+
+    <title>赵祖欣作业</title>
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "点击我跳转到<b>招生简章</b>"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "<b>鼠标到这里来</b>"
+        }
+    </script>
+</head>
+
+<body style="background-image: url('../image/timg.gif');">
+
+    <div>
+        <div id="head_huadian">
+            <div style="width: 250px;float: left;"><a href="http://www.ncepu.edu.cn/"><img src='../image/timg.jpg'
+                        alt='学校' height="60"></a></div>
+            <div style="width: 250px;float: left;"><a href="http://www.ncepu.edu.cn/"><img src='../image/timg.jpg'
+                        alt='学校' height="60"></a></div>
+
+            <div id="login">
+                <form method="post">
+                    <div style="float:right ;">
+                        <input type="password" required="required" placeholder="密码" name="p"></input><br>
+                        <button class="but" type="submit">退出</button></div>
+
+                    <div style="float:right">
+                        <input type="text" required="required" placeholder="用户名" name="u"></input><br>
+                        <button class="but" type="submit">登录</button></div>
+
+                </form>
+            </div>
+        </div>
+        <!--顶部的菜单栏-->
+        <div>
+            <div>
+                <ul>
+                    <li><a class="active" href="../index.html">主页</a></li>
+                    <li><a href="../html/1.html">华电招生</a></li>
+                    <li><a href="../html/4.html">学校宣传片</a></li>
+                    <li><a href="../html/3.html">学校校歌</a></li>
+                    <li><a href="../html/2.html">华电漫画校园</a></li>
+
+
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">学校网站</a>
+                        <div class="dropdown-content">
+                            <a href="http://www.ncepu.edu.cn/" target="_blank">学校官网</a>
+                            <a href="http://jwc.ncepu.edu.cn/" target="_blank">学校教务处</a>
+                            <a href="http://mail.ncepu.edu.cn/" target="_blank">学校邮箱登录</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div style="width: 150px; float: left;">
+        <br><br><br><br>
+        <a href="#zsjz" style="text-align: center"">
+            <div onmouseover=" mOver(this)" onmouseout="mOut(this)"
+            style="background-color:rgb(135, 147, 187);width:140px;height:40px;padding:40px; ">鼠标到这里来</div>
+    </a>
+    </div>
+
+    <div>
+        <h1 style="width:75%;float:right;text-align:center ;color: blueviolet">2018各省招生人数情况</h1>
+        <table id="customers">
+
+            <tr>
+                <th>省份</th>
+                <th>理工类（人）</th>
+                <th>文史类（人）</th>
+            </tr>
+            <tr>
+                <td>北京</td>
+                <td>122</td>
+                <td>15</td>
+            </tr>
+            <tr class="alt">
+                <td>天津</td>
+                <td>59</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>河北</td>
+                <td>84</td>
+                <td>11</td>
+            </tr>
+            <tr class="alt">
+                <td>山西</td>
+                <td>102</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>内蒙古</td>
+                <td>67</td>
+                <td>8</td>
+            </tr>
+            <tr class="alt">
+                <td>辽宁</td>
+                <td>61</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>吉林</td>
+                <td>60</td>
+                <td>8</td>
+            </tr>
+            <tr class="alt">
+                <td>黑龙江</td>
+                <td>60</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>四川</td>
+                <td>74</td>
+                <td>8</td>
+            </tr>
+            <tr class="alt">
+                <td>江苏</td>
+                <td>75</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>重庆</td>
+                <td>42</td>
+                <td>4</td>
+            </tr>
+            <tr class="alt">
+                <td>安徽</td>
+                <td>93</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>福建</td>
+                <td>65</td>
+                <td>9</td>
+            </tr>
+            <tr class="alt">
+                <td>江西</td>
+                <td>74</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>河南</td>
+                <td>95</td>
+                <td>12</td>
+            </tr>
+            <tr class="alt">
+                <td>广州</td>
+                <td>88</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>湖北</td>
+                <td>63</td>
+                <td>9</td>
+            </tr>
+            <tr class="alt">
+                <td>贵州</td>
+                <td>76</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>云南</td>
+                <td>73</td>
+                <td>8</td>
+            </tr>
+            <tr class="alt">
+                <td>青海</td>
+                <td>47</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>西藏</td>
+                <td>19</td>
+                <td>3</td>
+            </tr>
+            <tr class="alt">
+                <td>新疆</td>
+                <td>65</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+
+        </table>
+        <a style="width:75%;float:right;text-align:center ;" target="_blank"
+            href="http://goto.ncepu.edu.cn/bkzn/wnfs/2b36f417ab254348bb76abdfb0e25c2e.htm">
+            <h3>更多详细情况请点击我</h3>
+        </a>
+        <br>
+        <br>
+    </div>
+
+    <div style="text-align:center">
+        <h2 style="width:100%;float:right;text-align:center ; color: blueviolet" id="zsjz">2018招生简章</h2>
+        <a target="_blank" href="../image/b7282f86a57c4fc7a5902c6fa3ec0be3.jpg">
+            <img src="../image/b7282f86a57c4fc7a5902c6fa3ec0be3.jpg" alt="招生简章" width="1200" height="730">
+        </a>
+        <br><br>
+        <a target="_blank" href="../image/6825f146d8f94045a8689485512b9542.jpg">
+            <img src="../image/6825f146d8f94045a8689485512b9542.jpg" alt="招生简章" width="1200" height="730">
+        </a>
+
+    </div>
+    </div>
+</body>
+
+</html>
