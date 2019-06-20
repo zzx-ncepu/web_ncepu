@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="/static/main.css">
+        <title>增加学生数据</title>
+    </head>
+<body>
+ <h1 style="text-align: center;">学生信息管理系统</h1>
+ <h4 style="text-align: right;">自动化1703赵祖欣</h4>
+ <hr>
+<h2 style="text-align: center;">系统的基本功能</h2>
+<div style="text-align: center;">
+	<a href="/index/"><button class="button">主页</button></a>
+	<a href="/zengjia/"> <button class="button">增加学生数据</button></a>
+	<a href="/xiugai/"> <button class="button">修改学生数据</button></a>
+	<a href="/chazhao/"> <button class="button">查找学生数据</button></a>
+	<a href="/shanchu/"> <button class="button">删除学生数据</button></a>
+</div>
+<br>
+<h2 style="text-align: center;">增加学生数据</h2>
+<div id ="biaodan" style="text-align: center;">
+	<form action="/zengjia/" method="post">
+		<label for="fname">姓名 </label>
+	     <input type="text" name="name"  placeholder="名字"><br>
+
+		 <label for="fname">账号 </label>
+	     <input type="text" name="username"  placeholder="账号"><br>
+
+	     <label for="fname" >密码 </label>
+	     <input type="password" name="password" placeholder="密码"><br>
+		
+		<label for="fname">性别 </label>
+	     <select type="text" name="sex">
+		      <option value="男">男</option>
+		      <option value="女">女</option>
+	     </select><br>
+
+	     <label for="fname">学校 </label>
+	     <input type="text" name="school" placeholder="学校"><br>
+
+	     <label for="fname">电话 </label>
+	     <input type="text" name="phone" placeholder="电话"><br>
+  
+	     <input type="submit" value="提交">
+	 </form>
+</div>
+
+
+<div style="text-align: center;">
+	 <h1 style="text-align: center">用户信息</h1>
+	 <table class="hovertable" width="80%" style="text-align: center;margin:0 auto; ">
+		<thead>
+		    <th>姓名</th>
+		    <th>账号</th>
+		    <th>性别</th>
+		    <th>学校</th>
+		    <th>电话</th>
+		</thead>
+		<tbody>
+			{% for line in data %}
+			<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+			    <td>{{ line.name }}</td>
+			    <td>{{ line.user }}</td>
+			    <td>{{ line.sex }}</td>
+			    <td>{{ line.school }}</td>
+			    <td>{{ line.phone }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+ 
+</body>
+</html>
